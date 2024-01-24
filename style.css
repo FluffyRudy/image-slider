@@ -11,7 +11,7 @@ slider style
 */
 .image-slider {
     width: min(900px, 100vw);
-    height: 80vh;
+    height: 85vh;
     margin: auto;
     position: relative;
 }
@@ -63,6 +63,10 @@ image hover state display style
     white-space: nowrap;
     background-color: rgba(0, 0, 0, 0.4);
     padding: 0 20px;
+    border: 1px solid #fff;
+    border-radius: 1vmax;
+    scroll-behavior: smooth;
+    scrollbar-width: 50px;
 }
 
 .dot {

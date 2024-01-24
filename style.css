@@ -10,8 +10,10 @@ body {
 slider style
 */
 .image-slider {
-    width: 100%;
+    width: min(900px, 100vw);
     height: 80vh;
+    margin: auto;
+    position: relative;
 }
 
 .image-slider > img {
@@ -23,7 +25,7 @@ slider style
     position: absolute;
     top: 40%;
     color: #fff;
-    font-size: 8vmax;
+    font-size: 5em;
     transform: translateY(-50%);
     background-color: rgba(0, 0, 0, 0.4);
     border: none;
@@ -42,11 +44,7 @@ slider style
 navigation button style
 */
 .next-button {
-    right: 5%;
-}
-
-.previous-button {
-    left: 5%;
+    right: 0;
 }
 
 /*
@@ -59,16 +57,23 @@ image hover state display style
 
 .dots {
     height: 10vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1vmax;
+    width: 30%;
+    margin: auto;
+    overflow-x: scroll;
+    white-space: nowrap;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 0 20px;
 }
 
 .dot {
-    padding: 2vmax;
+    width: 20.5px;
+    height: 20.5px;
     border-radius: 50%;
     border: none;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 1vmin;
 }
 
 .focused-circle {
